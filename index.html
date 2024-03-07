@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="color-scheme" content="light dark" />
+    <title>Movie Picker</title>
+    <meta
+      name="description"
+      content="A pure HTML example, without dependencies."
+    />
+
+    <!-- Pico.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header class="container">
+      <nav>
+        <ul>
+          <li><h1>Movie Picker</h1></li>
+        </ul>
+        <ul>
+          <li><a href="#" class="contrast">Picks</a></li>
+          <li><a href="#" class="contrast">Favorites</a></li>
+          <li><a href="#" class="contrast">Logout</a></li>
+        </ul>
+      </nav>
+    </header>
+    <!-- ./ Header -->
+    <!-- ./ Main -->
+    <main class="container">
+      <div class="grid">
+        <div>
+            <article>
+                <h3>Looking for a Movie?</h3>
+          <fieldset>
+            <h6>Genre:</h6>
+
+            <input type="radio" id="romance" name="genre" checked />
+            <label htmlFor="romance">Romance</label>
+
+            <input type="radio" id="comedy" name="genre" />
+            <label htmlFor="comedy">Comedy</label>
+
+            <input type="radio" id="thriller" name="genre" />
+            <label htmlFor="thriller">Thriller</label>
+          </fieldset>
+
+          <fieldset>
+            <h6>Length of Movie:</h6>
+            <input type="radio" id="90" name="length" checked />
+            <label htmlFor="90">Less than 90 min</label>
+            <input type="radio" id="120" name="length" checked />
+            <label htmlFor="90">Less than 120 min</label>
+            <input type="radio" id="90" name="length" checked />
+            <label htmlFor="90">Less than 150 min</label>
+          </fieldset>
+          <fieldset>
+            <h6>Language:</h6>
+            <input type="radio" id="spanish" name="language" checked />
+            <label htmlFor="spanish">Spanish</label>
+            <input type="radio" id="french" name="language" checked />
+            <label htmlFor="french">French</label>
+            <input type="radio" id="korean" name="language" checked />
+            <label htmlFor="korean">Korean</label>
+          </fieldset>
+          <button type="submit">Submit</button>
+        </div>
+</article>
+ <article>
+    <div>
+          <h3>Add a Movie</h3>
+          <fieldset>
+            <h6>Genre:</h6>
+            <input type="text" name="text" placeholder="Comedy" aria-label="Text" />
+            <h6>Length of Movie:</h6>
+            <input type="text" name="text" placeholder="less than 90 min" aria-label="Text" />
+            <h6>Language:</h6>
+            <input type="text" name="text" placeholder="Spanish" aria-label="Text" />
+          </fieldset>
+          <button type="submit">Submit</button>
+        </div>
+    </article> 
+        
+      </div>
+    </main>
+    <!-- ./ Main -->
+  </body>
+</html>
