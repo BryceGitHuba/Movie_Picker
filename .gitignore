@@ -7,13 +7,7 @@ node_modules
 # macOS specific files
 .DS_Store
 
-# Log files
-*.log
-
 # User-specific files
 .idea
 .vscode
-
-# Dependency directories
-bower_components/
-jspm_packages/
+package-lock.json

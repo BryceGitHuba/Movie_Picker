@@ -1,0 +1,33 @@
+{
+  "env": {
+    "browser": true,
+    "commonjs": true,
+    "node": true,
+    "es6": true
+  },
+  "extends": "eslint:recommended",
+  "parserOptions": {
+    "ecmaVersion": "latest",
+    "sourceType": "module"
+  },
+  "rules": {
+    "array-callback-return": "error",
+    "camelcase": "error",
+    "curly": "error",
+    "default-case": "error",
+    "dot-notation": "error",
+    "eqeqeq": "error",
+    "radix": "off",
+    "no-duplicate-case": "error",
+    "no-empty": "error",
+    "no-empty-function": "error",
+    "no-fallthrough": "error",
+    "no-func-assign": "error",
+    "no-irregular-whitespace": ["error", { "skipComments": true }],
+    "no-redeclare": "error",
+    "no-self-compare": "error",
+    "no-unreachable": "error",
+    "no-use-before-define": "error",
+    "no-unused-vars": "error"
+  }
+}
