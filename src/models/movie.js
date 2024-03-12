@@ -19,11 +19,15 @@ Movie.init(
       type: DataTypes.STRING,
       allowNull: false,
     },
+    leadRole: {
+      type: DataTypes.STRING,
+      allowNull: false,
+    },
     description: {
       type: DataTypes.STRING,
       allowNull: false,
     },
-    run_time: {
+    runTime: {
       type: DataTypes.INTEGER,
       allowNull: false,
     },
