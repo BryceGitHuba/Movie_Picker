@@ -18,3 +18,4 @@ exports.getMovieRecommendations = async (req, res) => {
     res.render('error');
   }
 };
+
