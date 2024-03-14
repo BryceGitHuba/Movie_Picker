@@ -2,7 +2,7 @@ const { Movie } = require("../models");
 
 const movieData = [
   {
-    id: 1,
+   
     imdbID: "tt2203939",
     title: "The Other Woman",
     genre: "Comedy",
@@ -12,7 +12,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BMTc0ODE4ODY1OF5BMl5BanBnXkFtZTgwMDA5NjkzMTE@._V1_SX300.jpg",
   },
   {
-    id: 2,
+
     imdbID: "tt0377092",
     title: "Mean Girls",
     genre: "Comedy",
@@ -22,7 +22,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BMjE1MDQ4MjI1OV5BMl5BanBnXkFtZTcwNzcwODAzMw@@._V1_SX300.jpg",
   },
   {
-    id: 3,
+   
     imdbID: "tt1001526",
     title: "Megamind",
     genre: "Comedy",
@@ -32,7 +32,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BMTAzMzI0NTMzNDBeQTJeQWpwZ15BbWU3MDM3NTAyOTM@._V1_SX300.jpg",
   },
   {
-    id: 4,
+
     imdbID: "tt21188080",
     title: "Lisa Frankenstein",
     genre: "Comedy",
@@ -42,7 +42,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BNjJkZDExMGQtNGE2YS00YzJiLWJiNjEtNmYwZjIxZGMxNTZiXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_SX300.jpg",
   },
   {
-    id: 5,
+    
     imdbID: "tt0112697",
     title: "Clueless",
     genre: "Comedy",
@@ -52,7 +52,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BMzBmOGQ0NWItOTZjZC00ZDAxLTgyOTEtODJiYWQ2YWNiYWVjXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg",
   },
   {
-    id: 6,
+   
     imdbID: "tt0095016",
     title: "Die Hard",
     genre: "Action",
@@ -62,7 +62,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
   },
   {
-    id: 7,
+    
     imdbID: "tt0075148",
     title: "Rocky",
     genre: "Action",
@@ -72,7 +72,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BNTBkMjg2MjYtYTZjOS00ODQ0LTg0MDEtM2FiNmJmOGU1NGEwXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
   },
   {
-    id: 8,
+ 
     imdbID: "tt0800369",
     title: "Thor",
     genre: "Action",
@@ -82,7 +82,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg",
   },
   {
-    id: 9,
+   
     imdbID: "tt0360717",
     title: "King Kong",
     genre: "Action",
@@ -92,7 +92,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BMjYxYmRlZWYtMzAwNC00MDA1LWJjNTItOTBjMzlhNGMzYzk3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
   },
   {
-    id: 10,
+  
     imdbID: "tt0066995",
     title: "Diamonds Are Forever",
     genre: "Action",
@@ -102,7 +102,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BZjE1NTc2MzAtZTgzNi00ZmY0LWIxNjUtZTQwMjdlNTY0ZTM2XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
   },
   {
-    id: 11,
+   
     imdbID: "tt0055614",
     title: "West Side Story",
     genre: "Musical",
@@ -112,7 +112,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BMTM0NDAxOTI5MF5BMl5BanBnXkFtZTcwNjI4Mjg3NA@@._V1_SX300.jpg",
   },
   {
-    id: 12,
+   
     imdbID: "tt3783958",
     title: "La La Land",
     genre: "Musical",
@@ -122,7 +122,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_SX300.jpg",
   },
   {
-    id: 13,
+  
     imdbID: "tt0077631",
     title: "Grease",
     genre: "Musical",
@@ -132,7 +132,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BZmUyMDEyOTgtZmUwOS00NTdkLThlNzctNTM1ODQ4M2VhMjdhXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
   },
   {
-    id: 14,
+  
     imdbID: "tt0299658",
     title: "Chicago",
     genre: "Musical",
@@ -142,7 +142,7 @@ const movieData = [
     poster: "https://m.media-amazon.com/images/M/MV5BN2E3NDU1ZTktNzZjNy00MWU3LWI4YmMtMjdjNTIzMDU0MDdiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
   },
   {
-    id: 15,
+   
     imdbID: "tt0795421",
     title: "Mamma Mia!",
     genre: "Musical",

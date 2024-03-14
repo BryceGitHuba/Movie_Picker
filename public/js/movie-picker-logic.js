@@ -1,39 +1,42 @@
+const moviePickerForm = document.querySelector("#movie-picker");
+
 const moviePicker = async (event) => {
   event.preventDefault();
 
-  let genre = document.querySelector("input:checked").value;
+  let selection;
 
-  switch (genre) {
-    case "Comedy":
-      selection = comedy;
-      break;
-    case "Action":
-      selection = action;
-      break;
-    case "Musical":
-      selection = musical;
-      break;
-  };
+  let comedyGenre = document.querySelector("#comedy").checked;
+  let actionGenre = document.querySelector("#action").checked;
 
-  if (genre) {
-  let response = await fetch(`/api/movie-picker/genre`, {
-      method: "GET",
-      body: JSON.stringify({ genre }),
-      headers: { "Content-Type": "application/json" },
-    });
+  console.log(comedyGenre);
 
-    if (response.ok) {
-      document.location.reload();
-    } else {
-      console.log('Response status:', response.status);
-      console.log('Response text:', await response.text());
+  if (comedyGenre=== true){
+    selection =  'comedy'
+  } else if (actionGenre === true){
+    selection = 'action'
   }
-}
+
+//   switch (genre) {
+//     case "Comedy":
+//       selection = comedy;
+//       break;
+//     case "Action":
+//       selection = action;
+//       break;
+//     case "Musical":
+//       selection = musical;
+//       break;
+//       default:
+//         break;
+//   };
+
+
+window.location.replace(`/results/${selection}`)
+
 };
 
 // Event listeners
-const moviePickerForm = document.querySelector("#movie-picker");
-if (moviePickerForm) {
+
   moviePickerForm.addEventListener("submit", moviePicker);
-}
+
 // Handlebar partials, Response let response = response.render if(), if I use re. render do I need to add in the middleware?
