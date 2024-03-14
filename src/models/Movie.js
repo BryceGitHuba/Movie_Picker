@@ -11,10 +11,6 @@ Movie.init(
       primaryKey: true,
       autoIncrement: true,
     },
-    imdbID: {
-      type: DataTypes.STRING(15), // tt0050083
-      allowNull: true,
-    },
     title: {
       type: DataTypes.STRING,
       allowNull: false,
@@ -25,15 +21,15 @@ Movie.init(
     },
     releaseDate: {
       type: DataTypes.DATEONLY, // 2024-3-11
-      allowNull: false,
+      allowNull: true,
     },
     runTime: {
       type: DataTypes.INTEGER, // minutes
-      allowNull: false,
+      allowNull: true,
     },
     poster: {
       type: DataTypes.STRING, // link such as https://m.media-amazon.com/images/M/MV5BOGIzYjM3YzMtMjk5ZS00NDY2LTllMjEtNjYwZjhmMDNhMDBkXkEyXkFqcGdeQXVyODUzMjQxMTA@._V1_SX300.jpg
-      allowNull: false,
+      allowNull: true,
     },
   },
   {
