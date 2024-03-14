@@ -32,7 +32,7 @@ Movie.init(
     sequelize,
     freezeTableName: true,
     underscored: true,
-    modelName: 'movie',
+    modelName: 'movi3',
   }
 );
 
