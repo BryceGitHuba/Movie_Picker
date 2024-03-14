@@ -30,8 +30,8 @@
      <main class="container">
       <div class="grid">
         <div>
-            <article>
-                <h3>Looking for a Movie?</h3>
+            <details class="dropdown">
+                <summary> <h3>Looking for a Movie?</h3> </summary>
                 <fieldset>
                     <h6>Genre:</h6>
 
@@ -45,10 +45,10 @@
                     <label htmlFor="musical">Musical</label>
 
                 </fieldset>
-            </article>
-            <article>
-                <div>
-                    <h3>Add a Movie</h3>
+            </details>
+            <br>
+            <details class="dropdown">
+                <summary> <h3>Add a Movie</h3> </summary>
                     <fieldset>
                         <h6>Title:</h6>
                         <input type="text" name="title" placeholder="The Notebook" aria-label="Text" />
@@ -58,8 +58,7 @@
                         <input type="text" name="text" placeholder="Movie Plot" aria-label="Text" />
                     </fieldset>
                     <button type="submit">Submit</button>
-                </div>
-            </article> 
+            </details> 
         
       </div>
     </main>
