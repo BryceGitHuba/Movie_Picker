@@ -3,18 +3,65 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Recommendation App</title>
+    <meta name="color-scheme" content="light dark" />
+    <title>Reel Report</title>
+        <!-- Pico.css -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css"
+    />
+    <link rel="stylesheet" href="/public/assets/css/style.css"/>
 </head>
 <body>
-    <h1>Welcome to the Movie Recommendation App</h1>
-    <form action="/recommendations" method="POST">
-        <label for="genre">Favorite Genre:</label>
-        <input type="text" name="genre" id="genre">
-        <br>
-        <label for="year">Release Year:</label>
-        <input type="text" name="year" id="year">
-        <br>
-        <button type="submit">Get Recommendations</button>
-    </form>
+    <!-- Header -->
+    <header class="container">
+        <!-- Navigation Bar -->
+        <nav>
+            <img src="/public/assets/images/logo.png" alt="Reel Report Logo"/>
+            <ul>
+                <li><a href="#" class="contrast">Picks</a></li>
+                <li><a href="#" class="contrast">Favorites</a></li>
+                <li><a href="#" class="contrast">Logout</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main -->
+     <main class="container">
+      <div class="grid">
+        <div>
+            <article>
+                <h3>Looking for a Movie?</h3>
+                <fieldset>
+                    <h6>Genre:</h6>
+
+                    <input type="radio" id="romance" name="genre" checked />
+                    <label htmlFor="romance">Romance</label>
+
+                    <input type="radio" id="comedy" name="genre" />
+                    <label htmlFor="comedy">Comedy</label>
+
+                    <input type="radio" id="musical" name="genre" />
+                    <label htmlFor="musical">Musical</label>
+
+                </fieldset>
+            </article>
+            <article>
+                <div>
+                    <h3>Add a Movie</h3>
+                    <fieldset>
+                        <h6>Title:</h6>
+                        <input type="text" name="title" placeholder="The Notebook" aria-label="Text" />
+                        <h6>Gemre:</h6>
+                        <input type="text" name="genre" placeholder="Romance" aria-label="Text" />
+                        <h6>Plot:</h6>
+                        <input type="text" name="text" placeholder="Movie Plot" aria-label="Text" />
+                    </fieldset>
+                    <button type="submit">Submit</button>
+                </div>
+            </article> 
+        
+      </div>
+    </main>
 </body>
 </html>
