@@ -3,40 +3,27 @@ const moviePickerForm = document.querySelector("#movie-picker");
 const moviePicker = async (event) => {
   event.preventDefault();
 
-  let selection;
 
-  let comedyGenre = document.querySelector("#comedy").checked;
-  let actionGenre = document.querySelector("#action").checked;
+  // let selection;
 
-  console.log(comedyGenre);
+  let genre = document.querySelector('input[name="genre"]:checked').value;
+  // let actionGenre = document.querySelector("#action").checked;
+  // let musicalGenre = document.querySelector("#musical").checked;
 
-  if (comedyGenre=== true){
-    selection =  'comedy'
-  } else if (actionGenre === true){
-    selection = 'action'
-  }
+  console.log(genre)
 
-//   switch (genre) {
-//     case "Comedy":
-//       selection = comedy;
-//       break;
-//     case "Action":
-//       selection = action;
-//       break;
-//     case "Musical":
-//       selection = musical;
-//       break;
-//       default:
-//         break;
-//   };
+  // if (comedyGenre=== true){
+  //   selection =  '1'
+  // } else if (actionGenre === true){
+  //   selection = '2'
+  // }
+  // else if (musicalGenre === true){
+  //   selection = '3'
+  // }
 
-
-window.location.replace(`/results/${selection}`)
-
+window.location.replace(`/results/${genre}`)
 };
 
 // Event listeners
 
   moviePickerForm.addEventListener("submit", moviePicker);
-
-// Handlebar partials, Response let response = response.render if(), if I use re. render do I need to add in the middleware?
