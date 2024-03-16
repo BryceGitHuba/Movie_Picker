@@ -1,17 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Movie Recommendations</title>
-</head>
-<body>
-    <h1>Movie Recommendations</h1>
-   
-        <div>
-            <h2>{{movieItem.title}}</h2>
-            {{!-- <p>{{overview}}</p> --}}
-        </div>
+<main class="container">
+    <div class="grid">
+        <h1>Your Reel Report</h1>
+        <article>
+            <img src={{Movie.poster}} alt={{Movie.title}}\>
+            Movie Poster
+        </article>
+        <article>
+            <h2>{{Movie.title}}</h2>
+            <h3>{{Movie.genre}}<br>{{Movie.releaseDate}}<br>{{Movie.runTime}} Minutes</h3>
+            <p>{{Movie.plot}}</p>
+        </article>
+    </div>
+</main>
 
-</body>
-</html>
+<script src="/js/movie-picker-logic.js"></script>
