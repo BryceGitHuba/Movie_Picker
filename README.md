@@ -21,46 +21,46 @@ Reel Report is an innovative app designed to transform how users discover movies
 
 ### Acceptance Criteria:
 
--Given I am a new or returning user intending to access personalized movie recommendations,
--When I navigate to the application's login page and enter my credentials,
--Then I am directed to the homepage where I can begin to specify my movie preferences.
+- Given I am a new or returning user intending to access personalized movie recommendations,
+- When I navigate to the application's login page and enter my credentials,
+- Then I am directed to the homepage where I can begin to specify my movie preferences.
 <br> 
--Given I am on the homepage ready to find a new movie to watch,
--When I select my preferred movie genres and specify a year or range of years,
--Then the application generates a list of recommended movies that match my selected criteria, offering a personalized viewing suggestion.
+- Given I am on the homepage ready to find a new movie to watch,
+- When I select my preferred movie genres and specify a year or range of years,
+- Then the application generates a list of recommended movies that match my selected criteria, offering a personalized viewing suggestion.
 <br> 
--Given I have previously explored and selected several movies as my favorites or picks,
--When I visit the 'My Picks' or 'Favorites' section of the application,
--Then I am presented with a curated list of the movies I've marked as favorites, allowing me to easily access or modify my selections.
+- Given I have previously explored and selected several movies as my favorites or picks,
+- When I visit the 'My Picks' or 'Favorites' section of the application,
+- Then I am presented with a curated list of the movies I've marked as favorites, allowing me to easily access or modify my selections.
 <br> 
 
 ### User Flow Diagram: 
 
--User opens the application.
+- User opens the application.
 
--User is presented with the option to log in or sign up.
+- User is presented with the option to log in or sign up.
 
--If new user: User selects "Sign Up," enters required information, and creates an account.
+- If new user: User selects "Sign Up," enters required information, and creates an account.
 
--If returning user: User selects "Log In," enters credentials, and accesses the homepage.
+- If returning user: User selects "Log In," enters credentials, and accesses the homepage.
 
--Upon successful login or signup, the user is directed to the homepage.
+- Upon successful login or signup, the user is directed to the homepage.
 
--The homepage offers options to input movie preferences, such as genre selection and year or range of years.
+- The homepage offers options to input movie preferences, such as genre selection and year or range of years.
 
--After submitting preferences, the application processes the input.
+- After submitting preferences, the application processes the input.
 
--The user is then presented with a list of movie recommendations based on the specified genres and years.
+- The user is then presented with a list of movie recommendations based on the specified genres and years.
 
--Interacting with Recommendations
+- Interacting with Recommendations
 
--Option to Favorite: User can mark movies as favorites or picks for later viewing.
+- Option to Favorite: User can mark movies as favorites or picks for later viewing.
 
--From any page, the user can navigate to the 'My Picks' or 'Favorites' section.
+- From any page, the user can navigate to the 'My Picks' or 'Favorites' section.
 
--This section displays all the movies previously marked as favorites, allowing the user to modify or remove selections.
+- This section displays all the movies previously marked as favorites, allowing the user to modify or remove selections.
 
--Logout/Session End
+- Logout/Session End
 
 
 
