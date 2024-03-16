@@ -1,41 +1,19 @@
-const Actor = require('./Actor');
-const Cast = require('./Cast');
 const Genre = require('./Genre');
 const Movie = require('./Movie');
-const MovieGenres = require('./MovieGenres');
 const User = require('./User');
 
-// Actor associations
-// Actor.belongsTo(Cast, {
-//     foreignKey: 'actorID',
-// });
+// 1:M Association
 
-// Actor.hasMany(Movie, { 
-//     through: Cast 
-// });
+// Parent table = Genre
+// Genre can have 0+ movies
+Genre.hasMany(Movie, { foreignKey: 'genreId' });
 
-// // Cast associations
-// Cast.hasMany(Movie, {
-//     foreignKey: 'movieID',
-// });
+// Child table = Movie (FK references PK of Genre)
+// Movie belongs to one genre
+Movie.belongsTo(Genre, { foreignKey: 'genreId' });
 
-// Cast.hasMany(Actor, {
-//     foreignKey: 'actorID',
-// });
+// M:M Association
+// User has 0+ favorite movies, and a movie can be favorited by 0+ users
+// User.belongsToMany(Movie, { through: 'LikedMovies' })
 
-// Genre associations
-// Genre.belongsToMany(Movie, { 
-//     through: MovieGenres ,
-//     foreignKey: 'genreId'
-// });
-
-// Movie associations
-// Movie.hasMany(Actor, {
-//     foreignKey: 'actorID',
-// });
-
-// Movie.hasMany(Genre, {
-//     foreignKey: 'genreID',
-// });
-
-module.exports = { Actor, Cast, Genre, Movie, MovieGenres, User };
+module.exports = { Genre, Movie };

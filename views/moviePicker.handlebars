@@ -19,34 +19,38 @@
           </form>
         </article>
         <article>
-          <div>
+          <form class="add-movie-form">
             <h3>Add a Movie</h3>
             <fieldset>
-              <h6>Genre:</h6>
+              <label>Title:</label>
               <input
+                id="title"
+                type="text"
+                name="text"
+                placeholder="Movie title"
+                aria-label="Text"
+              />
+              <label>Genre:</label>
+              <input
+                id="genre"
                 type="text"
                 name="text"
                 placeholder="Comedy"
                 aria-label="Text"
               />
-              <h6>Length of Movie:</h6>
-              <input
-                type="text"
+              <label>Plot:</label>
+              <textarea 
+                id="plot"
                 name="text"
-                placeholder="less than 90 min"
-                aria-label="Text"
-              />
-              <h6>Language:</h6>
-              <input
-                type="text"
-                name="text"
-                placeholder="Spanish"
-                aria-label="Text"
-              />
+                rows="3" cols="1"
+                placeholder="Plot goes here"
+                required>
+              </textarea>
             </fieldset>
             <button type="submit">Submit</button>
-          </div>
+          </form>
         </article>
       </div>
 
 <script src="/js/movie-picker-logic.js"></script>
+<script src="/js/add-movie.js"></script>

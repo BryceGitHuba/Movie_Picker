@@ -5,7 +5,9 @@
   "main": "server.js",
   "scripts": {
     "start": "node server.js",
-    "lint":"eslint"
+    "lint":"eslint",
+    "seed": "node seeds/index.js",
+    "watch": "nodemon server"
   },
   "dependencies": {
     "body-parser": "^1.19.0",
@@ -19,6 +21,7 @@
     "mysql2": "^2.2.5"
   },
   "devDependencies": {
-    "eslint": "^8.57.0"
+    "eslint": "^8.57.0",
+    "nodemon": "^2.0.7"
   }
 }
