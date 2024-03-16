@@ -19,7 +19,7 @@ Reel Report is an innovative app designed to transform how users discover movies
 
 
 
-###Acceptance Criteria:
+### Acceptance Criteria:
 
 -Given I am a new or returning user intending to access personalized movie recommendations,
 -When I navigate to the application's login page and enter my credentials,
