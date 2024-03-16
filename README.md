@@ -1,4 +1,4 @@
-# DailyGrind Wellness Tracker
+# Movie Picker
 
 ###  Project Description: 
 Reel Report is an innovative app designed to transform how users discover movies. Through a series of questions about preferences such as genre, year, and more, it offers personalized movie recommendations. This app leverages a vast movie database API to ensure users have access to a wide range of films. Its user-friendly interface makes finding your next favorite film an enjoyable and effortless experience.
