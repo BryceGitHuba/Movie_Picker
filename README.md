@@ -24,15 +24,15 @@ Reel Report is an innovative app designed to transform how users discover movies
 - Given I am a new or returning user intending to access personalized movie recommendations,
 - When I navigate to the application's login page and enter my credentials,
 - Then I am directed to the homepage where I can begin to specify my movie preferences.
-<br> 
+  
 - Given I am on the homepage ready to find a new movie to watch,
 - When I select my preferred movie genres and specify a year or range of years,
 - Then the application generates a list of recommended movies that match my selected criteria, offering a personalized viewing suggestion.
-<br> 
+   
 - Given I have previously explored and selected several movies as my favorites or picks,
 - When I visit the 'My Picks' or 'Favorites' section of the application,
 - Then I am presented with a curated list of the movies I've marked as favorites, allowing me to easily access or modify my selections.
-<br> 
+ 
 
 ### User Flow Diagram: 
 
