@@ -7,10 +7,9 @@ const seedData = async () => {
 
     await seedGenres();
     console.log('Genres seeded');
-      await seedGenres();
-  await seedMovies();
-  console.log("Movies seeded");
-  console.log("genre seeded");
+
+    await seedMovies();
+    console.log("Movies seeded");
 
   process.exit(0);
 };

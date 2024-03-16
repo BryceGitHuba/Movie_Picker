@@ -24,36 +24,33 @@ router.get('/:id', async (req, res)=>{
 })
 
 // GET random movie based on its genre
-router.get("/results/:id", async (req, res) => {
+router.get("/results/:genre", async (req, res) => {
   try {
-    const movieData = await Genre.findOne({
-      where: {
-        id: req.params.id,
-        include: {
-          model: Movie
-        },
-      },
-    });
+    const movieData = await Movie.findAll({
+      include: {
+        model: Genre,
+        where: {
+          genre: req.params.genre,
+        }
+      }
+    })
 
-    if (!movieData){
-      alert('movie genre not available')
+    if (!movieData) {
+      alert(`Sorry, the ${req.params.genre} genre does not exist. Please try again.`);
     }
 
     const randomMovie = movieData[Math.floor(Math.random() * movieData.length)]   
 
-
-    const movieItem =  randomMovie.get({plain: true})
-
-
-    console.log(movieItem);
+    const movie =  randomMovie.get({plain: true})
 
     res.render('movieRecommendations', {
-      movieItem,
+      movie,
+      genre: req.params.genre.charAt(0).toUpperCase() + req.params.genre.slice(1),
       loggedIn: req.session.loggedIn
     })
 
-  } catch (error) {
-    res.status(500).json(error)
+  } catch (err) {
+    res.status(500).json(err);
   }
 });
 
