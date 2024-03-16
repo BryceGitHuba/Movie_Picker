@@ -16,13 +16,13 @@ Movie.init(
       allowNull: false,
     },
     genreId: {
-      type: DataTypes.INTEGER,
-      allowNull: false,
-      references: {
-          model: 'genre',
-          key: 'id',
-        },
-  },
+        type: DataTypes.INTEGER,
+        allowNull: false,
+        references: {
+            model: 'genre',
+            key: 'id',
+          },
+    },
     plot: {
       type:DataTypes.TEXT,
       allowNull: false,
@@ -31,7 +31,7 @@ Movie.init(
       type: DataTypes.DATEONLY, // 2024-3-11
       allowNull: true,
     },
-    runTime: {
+    runtime: {
       type: DataTypes.INTEGER, // minutes
       allowNull: true,
     },
@@ -43,7 +43,6 @@ Movie.init(
   {
     sequelize,
     freezeTableName: true,
-    underscored: true,
     modelName: 'movie',
   }
 );

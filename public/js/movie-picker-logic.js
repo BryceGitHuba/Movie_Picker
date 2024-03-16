@@ -3,14 +3,13 @@ const moviePickerForm = document.querySelector("#movie-picker");
 const moviePicker = async (event) => {
   event.preventDefault();
 
-
   // let selection;
 
-  let genre = document.querySelector('input[name="genre"]:checked').value;
+  let genre = document.querySelector('input[name=genre]:checked').getAttribute('id');
   // let actionGenre = document.querySelector("#action").checked;
   // let musicalGenre = document.querySelector("#musical").checked;
 
-  console.log(genre)
+  console.log(genre);
 
   // if (comedyGenre=== true){
   //   selection =  '1'

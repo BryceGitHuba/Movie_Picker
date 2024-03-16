@@ -6,8 +6,8 @@
   "scripts": {
     "start": "node server.js",
     "lint":"eslint",
-    "watch": "nodemon server",
-    "seed": "node seeds/index.js"
+    "seed": "node seeds/index.js",
+    "watch": "nodemon server"
   },
   "dependencies": {
     "body-parser": "^1.19.0",

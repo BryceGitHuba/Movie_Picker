@@ -12,14 +12,13 @@ Genre.init(
       autoIncrement: true,
     },
     genre: {
-        type: DataTypes.STRING(25),
-        allowNull: false,
-    },
+      type: DataTypes.STRING(25),
+      allowNull: false,
+  },
   },
   {
     sequelize,
     freezeTableName: true,
-    underscored: true,
     modelName: 'genre',
   }
 );
