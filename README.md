@@ -1,117 +1,72 @@
-Movie Recommendation App
-This is a movie recommendation web application built with Node.js, Express.js, Handlebars.js, MySQL, Sequelize ORM, and external movie database API integration. The application allows users to input their movie preferences and receive personalized movie recommendations based on those preferences. 
+# Movie Picker
 
-Features
+###  Project Description: 
+Reel Report is an innovative app designed to transform how users discover movies. Through a series of questions about preferences such as genre, year, and more, it offers personalized movie recommendations. This app leverages a vast movie database API to ensure users have access to a wide range of films. Its user-friendly interface makes finding your next favorite film an enjoyable and effortless experience.
 
-User-friendly interface for inputting movie preferences
-.
-Integration with an external movie database API for fetching movie data.
+### [Deployed application link (click here)]() 
 
-Personalized movie recommendations based on user preferences.
-
-Optional user authentication and session management.
-
-Customizable and extendable through modular architecture and MVC pattern.
-
-Installation
-
-Clone the repository:
-
-bash
-
-Copy code
-
-git clone https://github.com/your-username/movie-recommendation-app.git
-
-Install dependencies:
-
-bash
-
-Copy code
-
-cd movie-recommendation-app
-
-npm install
-
-Set up environment variables:
-
-Create a .env file in the root directory and add the following variables:
-
-
-makefile
-
-Copy code
-
-PORT=3000
-
-DB_HOST=localhost
-
-DB_USER=root
-
-DB_PASSWORD=password
-
-DB_NAME=movie_recommendations
-
-API_KEY=your_api_key
-
-Replace your_api_key with your API key obtained from the external movie database API provider.
-
-
-Start the server:
-
-sql
-
-Copy code
-
-npm start
-
-Usage
-
-Access the application through your web browser at http://localhost:3000.
-
-Input your movie preferences such as favorite genres, release years, etc.
-
-Receive personalized movie recommendations based on your preferences.
-
-Explore recommended movies and find something new to watch!
-
-Contributing
-
-Contributions are welcome! If you have any suggestions, feature requests, or bug reports, please open an issue or submit a pull request.
+### <img width="948" alt="image" src="https://github.com/BryceGitHuba/Movie_Picker/assets/149907275/755fad41-d718-41be-babc-26011934b758">
 
 
 
-License
+### User Story:
 
-This project is licensed under the MIT License.
-
-
-
-Acknowledgements
-
-Node.js
-
-Express.js
-
-Handlebars.js
-
-MySQL
-
-Sequelize
-
-Axios
-
-The Movie Database (TMDb)
-
-Contact
-
-For any inquiries or support, please contact
+- As a movie enthusiast
+- I want to receive movie recommendations based on specific criteria like genre and year
+- As a user seeking entertainment
+- I want to interact with a user-friendly app for movie suggestions
+- So that I can easily find my next favorite movie
 
 
-Brycewheelss22@gmail.com
 
-aprilv.189@gmail.com
+### Acceptance Criteria:
 
-kalynsifuentez@gmail.com
+- Given I am a new or returning user intending to access personalized movie recommendations,
+- When I navigate to the application's login page and enter my credentials,
+- Then I am directed to the homepage where I can begin to specify my movie preferences.
+  
+- Given I am on the homepage ready to find a new movie to watch,
+- When I select my preferred movie genres and specify a year or range of years,
+- Then the application generates a list of recommended movies that match my selected criteria, offering a personalized viewing suggestion.
+   
+- Given I have previously explored and selected several movies as my favorites or picks,
+- When I visit the 'My Picks' or 'Favorites' section of the application,
+- Then I am presented with a curated list of the movies I've marked as favorites, allowing me to easily access or modify my selections.
+ 
 
-jacobogzz@me.com
+### User Flow Diagram: 
+
+- User opens the application.
+
+- User is presented with the option to log in or sign up.
+
+- If new user: User selects "Sign Up," enters required information, and creates an account.
+
+- If returning user: User selects "Log In," enters credentials, and accesses the homepage.
+
+- Upon successful login or signup, the user is directed to the homepage.
+
+- The homepage offers options to input movie preferences, such as genre selection and year or range of years.
+
+- After submitting preferences, the application processes the input.
+
+- The user is then presented with a list of movie recommendations based on the specified genres and years.
+
+- Interacting with Recommendations
+
+- Option to Favorite: User can mark movies as favorites or picks for later viewing.
+
+- From any page, the user can navigate to the 'My Picks' or 'Favorites' section.
+
+- This section displays all the movies previously marked as favorites, allowing the user to modify or remove selections.
+
+- Logout/Session End
+
+
+
+### Server Side APIs:
+- [Open Movie Database API](https://www.omdbapi.com/)
+
+
+### CSS Framework:
+- [Pico CSS](https://picocss.com/)

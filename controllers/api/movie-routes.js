@@ -5,20 +5,22 @@ const withAuth = require("../../utils/auth");
 // GET movie based on its id
 router.get('/:id', async (req, res)=>{
   try {
-    const movieData = await Movie.findAll({
-      where: {
-        genre: req.params.genre,
-      },
-    });
+          const movieData = await Movie.findAll({
+            where: {
+              genre: req.params.genre
+            }
+          });
 
-    if (!movieData) {
-      res.json({ message: 'Movie genre is not available. Please try again.' });
-    }
+          if (!movieData){
+            res.json({message: 'movie genre not available'})
+          }
 
-    res.json(movieData);
-  } catch (err) {
-    res.status(500).json(err);
-  }
+          res.json(movieData)
+      
+          
+        } catch (err) {
+          res.status(500).json(err);
+        }
 })
 
 // GET random movie based on its genre

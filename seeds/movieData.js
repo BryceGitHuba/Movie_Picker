@@ -3,7 +3,7 @@ const { Movie } = require("../models");
 const movieData = [
   {
     title: "The Other Woman",
-    genreId: "1",
+    genreId: 1,
     plot: "After discovering her boyfriend is married, Carly Whitten tries to get her ruined life back on track. But when she accidentally meets the wife he's been cheating on, she realizes they have much in common, and her sworn enemy becomes her greatest friend. When yet another affair is discovered, all three women team up to plot mutual revenge on their cheating, lying, three-timing SOB.",
     releaseDate: new Date("2014-4-25"),
     runtime: 109,
@@ -11,7 +11,7 @@ const movieData = [
   },
   {
     title: "Mean Girls",
-    genreId: "1",
+    genreId: 1,
     plot: "Lindsay Lohan stars as Cady Heron, a 16 year old homeschooled girl who not only makes the mistake of falling for Aaron Samuels (Jonathan Bennett), the ex-boyfriend of queenbee Regina George (Rachel McAdams), but also unintentionally joins The Plastics, led by Regina herself. Join Cady as she learns that high school life can and will be really tough.",
     releaseDate: new Date("2004-4-30"),
     runtime: 97,
@@ -19,7 +19,7 @@ const movieData = [
   },
   {
     title: "Megamind",
-    genreId: "1",
+    genreId: 1,
     plot: "After super-villain Megamind (Ferrell) kills his good-guy nemesis, Metro Man (Pitt), he becomes bored since there is no one left to fight. He creates a new foe, Titan (Hill), who, instead of using his powers for good, sets out to destroy the world, positioning Megamind to save the day for the first time in his life.",
     releaseDate: new Date("2010-11-5"),
     runtime: 95,
@@ -27,7 +27,7 @@ const movieData = [
   },
   {
     title: "Lisa Frankenstein",
-    genreId: "1",
+    genreId: 1,
     plot: "A coming of RAGE love story about a teenager and her crush, who happens to be a corpse. After a set of horrific circumstances bring him back to life, the two embark on a journey to find love, happiness - and a few missing body parts.",
     releaseDate: new Date("2024-2-9"),
     runtime: 101,
@@ -35,7 +35,7 @@ const movieData = [
   },
   {
     title: "Clueless",
-    genreId: "1",
+    genreId: 1,
     plot: "Cher, a high school student in Beverly Hills, must survive the ups and downs of adolescent life. Her external demeanor at first seems superficial, but rather it hides her wit, charm, and intelligence which help her to deal with relationships, friends, family, school, and the all-important teenage social life.",
     releaseDate: new Date("1995-6-19"),
     runtime: 97,
@@ -43,7 +43,7 @@ const movieData = [
   },
   {
     title: "Die Hard",
-    genreId: "2",
+    genreId: 2,
     plot: "NYPD cop John McClane goes on a Christmas vacation to visit his wife Holly in Los Angeles where she works for the Nakatomi Corporation. While they are at the Nakatomi headquarters for a Christmas party, a group of robbers led by Hans Gruber take control of the building and hold everyone hostage, with the exception of John, while they plan to perform a lucrative heist. Unable to escape and with no immediate police response, John is forced to take matters into his own hands.",
     releaseDate: new Date("1988-6-20"),
     runtime: 132,
@@ -51,7 +51,7 @@ const movieData = [
   },
   {
     title: "Rocky",
-    genreId: "2",
+    genreId: 2,
     plot: "Rocky Balboa is a struggling boxer trying to make the big time, working as a debt collector for a pittance. When heavyweight champion Apollo Creed visits Philadelphia, his managers want to set up an exhibition match between Creed and a struggling boxer, touting the fight as a chance for a \"nobody\" to become a \"somebody\". The match is supposed to be easily won by Creed, but someone forgot to tell Rocky, who sees this as his only shot at the big time.",
     releaseDate: new Date("1976-12-3"),
     runtime: 120,
@@ -59,7 +59,7 @@ const movieData = [
   },
   {
     title: "Thor",
-    genreId: "2",
+    genreId: 2,
     plot: "The warrior Thor (Chris Hemsworth) is cast out of the fantastic realm of Asgard by his father Odin (Sir Anthony Hopkins) for his arrogance and sent to Earth to live amongst humans. Falling in love with scientist Jane Foster (Natalie Portman) teaches Thor much-needed lessons, and his new-found strength comes into play as a villain from his homeland sends dark forces toward Earth.",
     releaseDate: new Date("2011-5-6"),
     runtime: 115,
@@ -67,7 +67,7 @@ const movieData = [
   },
   {
     title: "King Kong",
-    genreId: "2",
+    genreId: 2,
     plot: "Carl Denham needs to finish his movie and has the perfect location; Skull Island. But he still needs to find a leading lady. This 'soon-to-be-unfortunate' soul is Ann Darrow. No one knows what they will encounter on this island and why it is so mysterious, but once they reach it, they will soon find out. Living on this hidden island is a giant gorilla and this beast now has Ann is its grasps. Carl and Ann's new love, Jack Driscoll must travel through the jungle looking for Kong and Ann, whilst avoiding all sorts of creatures and beasts. But Carl has another plan in mind.",
     releaseDate: new Date("2005-12-14"),
     runtime: 187,
@@ -75,7 +75,7 @@ const movieData = [
   },
   {
     title: "Diamonds Are Forever",
-    genreId: "2",
+    genreId: 2,
     plot: "James Bond's mission is to find out who has been smuggling diamonds, which are not re-appearing. He adopts another identity in the form of Peter Franks. He joins up with Tiffany Case, and acts as if he is smuggling the diamonds, but everyone is hungry for these diamonds. He also has to avoid Mr. Wint and Mr. Kidd, the dangerous couple who do not leave anyone in their way. Ernst Stavro Blofeld isn't out of the question. He may have changed his looks, but is he linked with the heist? And if he is, can Bond finally defeat his ultimate enemy.",
     releaseDate: new Date("1971-12-17"),
     runtime: 120,
@@ -83,7 +83,7 @@ const movieData = [
   },
   {
     title: "West Side Story",
-    genreId: "3",
+    genreId: 3,
     plot: "West Side Story is the award-winning adaptation of the classic romantic tragedy \"Romeo and Juliet\". The feuding families become two warring New York City gangs--the white Jets led by Riff and the Latino Sharks, led by Bernardo. Their hatred escalates to a point where neither can coexist with any form of understanding. But when Riff's best friend (and former Jet) Tony and Bernardo's younger sister Maria meet at a dance, no one can do anything to stop their love. Maria and Tony begin meeting in secret, planning to run away. Then the Sharks and Jets plan a rumble under the highway--whoever wins gains control of the streets. Maria sends Tony to stop it, hoping it can end the violence. It goes terribly wrong, and before the lovers know what's happened, tragedy strikes and doesn't stop until the climactic and heartbreaking ending.",
     releaseDate: new Date("1961-12-23"),
     runtime: 153,
@@ -91,7 +91,7 @@ const movieData = [
   },
   {
     title: "La La Land",
-    genreId: "3",
+    genreId: 3,
     plot: "Aspiring actress serves lattes to movie stars in between auditions and jazz musician Sebastian scrapes by playing cocktail-party gigs in dingy bars. But as success mounts, they are faced with decisions that fray the fragile fabric of their love affair, and the dreams they worked so hard to maintain in each other threaten to rip them apart.",
     releaseDate: new Date("2016-12-25"),
     runtime: 128,
@@ -99,15 +99,15 @@ const movieData = [
   },
   {
     title: "Grease",
-    genreId: "3",
-    plot: "A 3 about teens in love in the 1950s. It's California 1958 and greaser Danny Zuko (John Travolta) and Australian Sandy Olsson (Olivia Newton-John) are in love. They spend time at the beach, and when they go back to school, what neither of them knows is that they both now attend Rydell High. Danny's the leader of the T-Birds, a group of black leather jacket-wearing greasers while Sandy hangs with the Pink Ladies, a group of pink-wearing girls led by Rizzo (Stockard Channing). When they clash at Rydell's first pep rally, Danny isn't the same Danny from the beach. They try to be like each other so they can be together.",
+    genreId: 3,
+    plot: "A musical about teens in love in the 1950s. It's California 1958 and greaser Danny Zuko (John Travolta) and Australian Sandy Olsson (Olivia Newton-John) are in love. They spend time at the beach, and when they go back to school, what neither of them knows is that they both now attend Rydell High. Danny's the leader of the T-Birds, a group of black leather jacket-wearing greasers while Sandy hangs with the Pink Ladies, a group of pink-wearing girls led by Rizzo (Stockard Channing). When they clash at Rydell's first pep rally, Danny isn't the same Danny from the beach. They try to be like each other so they can be together.",
     releaseDate: new Date("1978-6-16"),
-    runtime: 110,
+    runTime: 110,
     poster: "https://m.media-amazon.com/images/M/MV5BZmUyMDEyOTgtZmUwOS00NTdkLThlNzctNTM1ODQ4M2VhMjdhXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
   },
   {
     title: "Chicago",
-    genreId: "3",
+    genreId: 3,
     plot: "Murderesses Velma Kelly (Catherine Zeta-Jones) (a chanteuse and tease who killed her husband and sister after finding them in bed together) and Roxie Hart (Renée Zellweger) (who killed her boyfriend when she discovered he wasn't going to make her a star) find themselves on death row together and fight for the fame that will keep them from the gallows in 1920s Chicago.",
     releaseDate: new Date("2003-1-24"),
     runtime: 113,
@@ -115,7 +115,7 @@ const movieData = [
   },
   {
     title: "Mamma Mia!",
-    genreId: "3",
+    genreId: 3,
     plot: "Set on a colorful Greek island, the plot serves as a background for a wealth of ABBA songs. A young woman about to be married discovers that any one of three men could be her father. She invites all three to the wedding without telling her mother, Donna Sheridan (Meryl Streep), who was once the lead singer of Donna and the Dynamos. In the meantime, Donna has invited her back-up singers, Rosie Mulligan (Dame Julie Walters) and Tanya Wilkinson (Christine Baranski).",
     releaseDate: new Date("2008-6-18"),
     runtime: 108,

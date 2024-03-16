@@ -1,19 +1,18 @@
-const seedGenres = require('./genreData');
-const seedMovies = require('./movieData');
-const sequelize = require('../config/connection')
+const seedMovies = require("./movieData");
+const seedGenres = require("./genreData");
+const sequelize = require("../config/connection");
 
-
-const seedData =  async ()=> {
-
-    await sequelize.sync({ force: true });
+const seedData = async () => {
+  await sequelize.sync({  force: true  });
 
     await seedGenres();
     console.log('Genres seeded');
-    
-    await seedMovies();
-    console.log('Movies seeded');
+      await seedGenres();
+  await seedMovies();
+  console.log("Movies seeded");
+  console.log("genre seeded");
 
-    process.exit(0)
-}
+  process.exit(0);
+};
 
-seedData()
+seedData();

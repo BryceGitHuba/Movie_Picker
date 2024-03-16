@@ -20,7 +20,7 @@ const moviePicker = async (event) => {
   //   selection = '3'
   // }
 
-window.location.replace(`/results/${genre}`);
+window.location.replace(`/results/${genre}`)
 };
 
 // Event listeners
