@@ -3,25 +3,19 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <meta name="color-scheme" content="light dark" />
-    <title>Movie Picker</title>
-    <meta
-      name="description"
-      content="A pure HTML example, without dependencies."
-    />
-
+    <meta name="color-scheme" content="light dark"/>
+    <title>Reel Report</title>
     <!-- Pico.css -->
     <link
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@picocss/pico@2.0.6/css/pico.min.css"
     />
+    <link rel="stylesheet" href="/public/assets/css/style.css"/>
 </head>
 <body>
     <header class="container">
       <nav>
-        <ul>
-          <li><h1>Movie Picker</h1></li>
-        </ul>
+        <img src="/public/assets/images/logo.png" alt="Reel Report"/>
         <ul>
           <li><a href="/" class="contrast">Home</a></li>
           {{!-- <li><a href="#" class="contrast">Favorites</a></li> --}}
@@ -29,12 +23,12 @@
           <li><a href="#" class="contrast">Logout</a></li>
           {{else}}
           <li><a href="#" class="contrast">Login</a></li>
+          <li><a href="#" class="contrast">Sign Up</a></li>
           {{/if}}
         </ul>
       </nav>
     </header>
-    <main>
-        {{{body}}}
-    </main>
+    
+    {{{body}}}
 </body>
 </html>

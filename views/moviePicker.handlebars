@@ -1,52 +1,42 @@
+<main class="container">
+  <div class="grid">
 
-<div class="grid">
-        <article>
-        <form id="movie-picker">
-            <h3>What type of movie would you like to watch?</h3>
-            <fieldset>
-              <h6>Genre:</h6>
+    <article>
+      <form id="movie-picker">
+        <h3>What type of movie would you like to watch?</h3>
 
-              <input type="radio" id="comedy" name="genre" checked value="1"/>
-              <label htmlFor="romance">Comedy</label>
+        <fieldset>
+          <h6>Genre:</h6>
+          {{#each Genre}}
+          <input type="radio" id={{Genre.genre}} name="genre" value={{Genre.id}}/>
+          <label htmlFor={{Genre.genre}}>{{Genre.genre}}</label>
+          {{/each}}
+        </fieldset>
 
-              <input type="radio" id="action" name="genre" value="2"/>
-              <label htmlFor="comedy">Action</label>
+        <button type="submit">Submit</button>
+      </form>
+    </article>
 
-              <input type="radio" id="musical" name="genre" value="3" />
-              <label htmlFor="musical">Musical</label>
-            </fieldset>
-            <button type="submit">Submit</button>
-          </form>
-        </article>
-        <article>
-          <div>
-            <h3>Add a Movie</h3>
-            <fieldset>
-              <h6>Title:</h6>
-              <input
-                type="text"
-                name="text"
-                placeholder=""
-                aria-label="Text"
-              />
-              <h6>Genre:</h6>
-              <input
-                type="text"
-                name="text"
-                placeholder=""
-                aria-label="Text"
-              />
-              <h6>Plot:</h6>
-              <input
-                type="text"
-                name="text"
-                placeholder="Spanish"
-                aria-label="Text"
-              />
-            </fieldset>
-            <button type="submit">Submit</button>
-          </div>
-        </article>
+    <article>
+      <div>
+        <h3>Add a Movie</h3>
+        <fieldset>
+
+          <h6>Title:</h6>
+          <input type="text" name="text" placeholder="" aria-label="Text"/>
+
+          <h6>Genre:</h6>
+          <input type="text" name="text" placeholder="" aria-label="Text"/>
+
+          <h6>Plot:</h6>
+          <input type="text" name="text" placeholder="" aria-label="Text"/>
+        
+        </fieldset>
+        
+        <button type="submit">Submit</button>
       </div>
+    </article>
+  </div>
+</main>
 
 <script src="/js/movie-picker-logic.js"></script>
