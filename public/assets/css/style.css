@@ -1,4 +1,14 @@
+.flex-wrap{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
 .center {
     display: flex;
     justify-content: center;
+    width:fit-content;  
+}
+
+.card-width {
+    width: 60%;
 }

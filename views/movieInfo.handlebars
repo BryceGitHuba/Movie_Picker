@@ -1,12 +1,13 @@
-<main class="container">
-    <div class="grid">
-        <h1>Your Reel Report</h1>
+<main class="container">    
+    <h1>Your Reel Report</h1>
+    <div class="flex-wrap">
+        <br>
         <article class="center">
-            <img src={{movie.poster}} alt="Poster of {{movie.title}}"\>
+            <img src={{movie.poster}} alt="{{movie.title}} Movie Poster"\>
         </article>
-        <article>
+        <article class="card-width">
             <h2>{{movie.title}}</h2>
-            <h3>{{genre}}<br>{{formatDate movie.releaseDate}}<br>{{formatTime movie.runtime}}</h3>
+            <h5>{{genre}}<br>{{formatDate movie.releaseDate}}<br>{{formatTime movie.runtime}}</h5>
             <p>{{movie.plot}}</p>
         </article>
     </div>
