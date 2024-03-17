@@ -14,7 +14,8 @@ Genre.init(
     genre: {
       type: DataTypes.STRING(25),
       allowNull: false,
-  },
+      unique: true,
+    },
   },
   {
     sequelize,

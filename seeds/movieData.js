@@ -8,6 +8,7 @@ const movieData = [
     releaseDate: new Date("2014-4-25"),
     runtime: 109,
     poster: "https://m.media-amazon.com/images/M/MV5BMTc0ODE4ODY1OF5BMl5BanBnXkFtZTgwMDA5NjkzMTE@._V1_SX300.jpg",
+    url: "the-other-woman",
   },
   {
     title: "Mean Girls",
@@ -16,6 +17,7 @@ const movieData = [
     releaseDate: new Date("2004-4-30"),
     runtime: 97,
     poster: "https://m.media-amazon.com/images/M/MV5BMjE1MDQ4MjI1OV5BMl5BanBnXkFtZTcwNzcwODAzMw@@._V1_SX300.jpg",
+    url: "mean-girls",
   },
   {
     title: "Megamind",
@@ -24,6 +26,7 @@ const movieData = [
     releaseDate: new Date("2010-11-5"),
     runtime: 95,
     poster: "https://m.media-amazon.com/images/M/MV5BMTAzMzI0NTMzNDBeQTJeQWpwZ15BbWU3MDM3NTAyOTM@._V1_SX300.jpg",
+    url: "megamind",
   },
   {
     title: "Lisa Frankenstein",
@@ -32,6 +35,7 @@ const movieData = [
     releaseDate: new Date("2024-2-9"),
     runtime: 101,
     poster: "https://m.media-amazon.com/images/M/MV5BNjJkZDExMGQtNGE2YS00YzJiLWJiNjEtNmYwZjIxZGMxNTZiXkEyXkFqcGdeQXVyMjkwOTAyMDU@._V1_SX300.jpg",
+    url: "lisa-frankenstein",
   },
   {
     title: "Clueless",
@@ -40,6 +44,7 @@ const movieData = [
     releaseDate: new Date("1995-6-19"),
     runtime: 97,
     poster: "https://m.media-amazon.com/images/M/MV5BMzBmOGQ0NWItOTZjZC00ZDAxLTgyOTEtODJiYWQ2YWNiYWVjXkEyXkFqcGdeQXVyNTE1NjY5Mg@@._V1_SX300.jpg",
+    url: "clueless",
   },
   {
     title: "Die Hard",
@@ -48,6 +53,7 @@ const movieData = [
     releaseDate: new Date("1988-6-20"),
     runtime: 132,
     poster: "https://m.media-amazon.com/images/M/MV5BZjRlNDUxZjAtOGQ4OC00OTNlLTgxNmQtYTBmMDgwZmNmNjkxXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    url: "die-hard",
   },
   {
     title: "Rocky",
@@ -56,6 +62,7 @@ const movieData = [
     releaseDate: new Date("1976-12-3"),
     runtime: 120,
     poster: "https://m.media-amazon.com/images/M/MV5BNTBkMjg2MjYtYTZjOS00ODQ0LTg0MDEtM2FiNmJmOGU1NGEwXkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
+    url: "rocky",
   },
   {
     title: "Thor",
@@ -64,6 +71,7 @@ const movieData = [
     releaseDate: new Date("2011-5-6"),
     runtime: 115,
     poster: "https://m.media-amazon.com/images/M/MV5BOGE4NzU1YTAtNzA3Mi00ZTA2LTg2YmYtMDJmMThiMjlkYjg2XkEyXkFqcGdeQXVyNTgzMDMzMTg@._V1_SX300.jpg",
+    url: "thor",
   },
   {
     title: "King Kong",
@@ -72,6 +80,7 @@ const movieData = [
     releaseDate: new Date("2005-12-14"),
     runtime: 187,
     poster: "https://m.media-amazon.com/images/M/MV5BMjYxYmRlZWYtMzAwNC00MDA1LWJjNTItOTBjMzlhNGMzYzk3XkEyXkFqcGdeQXVyMTQxNzMzNDI@._V1_SX300.jpg",
+    url: "king-kong",
   },
   {
     title: "Diamonds Are Forever",
@@ -80,6 +89,7 @@ const movieData = [
     releaseDate: new Date("1971-12-17"),
     runtime: 120,
     poster: "https://m.media-amazon.com/images/M/MV5BZjE1NTc2MzAtZTgzNi00ZmY0LWIxNjUtZTQwMjdlNTY0ZTM2XkEyXkFqcGdeQXVyMjUzOTY1NTc@._V1_SX300.jpg",
+    url: "diamonds-are-forever",
   },
   {
     title: "West Side Story",
@@ -88,6 +98,7 @@ const movieData = [
     releaseDate: new Date("1961-12-23"),
     runtime: 153,
     poster: "https://m.media-amazon.com/images/M/MV5BMTM0NDAxOTI5MF5BMl5BanBnXkFtZTcwNjI4Mjg3NA@@._V1_SX300.jpg",
+    url: "west-side-story",
   },
   {
     title: "La La Land",
@@ -96,14 +107,16 @@ const movieData = [
     releaseDate: new Date("2016-12-25"),
     runtime: 128,
     poster: "https://m.media-amazon.com/images/M/MV5BMzUzNDM2NzM2MV5BMl5BanBnXkFtZTgwNTM3NTg4OTE@._V1_SX300.jpg",
+    url: "la-la-land",
   },
   {
     title: "Grease",
     genreId: 3,
     plot: "A musical about teens in love in the 1950s. It's California 1958 and greaser Danny Zuko (John Travolta) and Australian Sandy Olsson (Olivia Newton-John) are in love. They spend time at the beach, and when they go back to school, what neither of them knows is that they both now attend Rydell High. Danny's the leader of the T-Birds, a group of black leather jacket-wearing greasers while Sandy hangs with the Pink Ladies, a group of pink-wearing girls led by Rizzo (Stockard Channing). When they clash at Rydell's first pep rally, Danny isn't the same Danny from the beach. They try to be like each other so they can be together.",
     releaseDate: new Date("1978-6-16"),
-    runTime: 110,
+    runtime: 110,
     poster: "https://m.media-amazon.com/images/M/MV5BZmUyMDEyOTgtZmUwOS00NTdkLThlNzctNTM1ODQ4M2VhMjdhXkEyXkFqcGdeQXVyNzkwMjQ5NzM@._V1_SX300.jpg",
+    url: "grease",
   },
   {
     title: "Chicago",
@@ -112,6 +125,7 @@ const movieData = [
     releaseDate: new Date("2003-1-24"),
     runtime: 113,
     poster: "https://m.media-amazon.com/images/M/MV5BN2E3NDU1ZTktNzZjNy00MWU3LWI4YmMtMjdjNTIzMDU0MDdiXkEyXkFqcGdeQXVyMTMxODk2OTU@._V1_SX300.jpg",
+    url: "chicago",
   },
   {
     title: "Mamma Mia!",
@@ -120,6 +134,7 @@ const movieData = [
     releaseDate: new Date("2008-6-18"),
     runtime: 108,
     poster: "https://m.media-amazon.com/images/M/MV5BMTA2MDU0MjM0MzReQTJeQWpwZ15BbWU3MDYwNzgwNzE@._V1_SX300.jpg",
+    url: "mamma-mia!",
   },
 ];
 
