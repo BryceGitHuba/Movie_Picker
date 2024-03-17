@@ -1,3 +1,11 @@
+:root{
+    --color-1: #292929;
+    --color-2: #585858;
+    --color-3: #ffc815;
+    --color-4: white;
+    --color-5: black;
+}
+
 .flex-wrap{
     display:flex;
     justify-content:space-around;
@@ -8,7 +16,15 @@
     justify-content: center;
     width:fit-content;  
 }
-
 .card-width {
     width: 60%;
 }
+
+.button{
+    background-color:var(--color-3);
+    border: var(--color-1);
+    color: var(--color-1);
+    font-weight: bold;
+}
+
+
