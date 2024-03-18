@@ -3,9 +3,9 @@
 ###  Project Description: 
 Reel Report is an innovative app designed to transform how users discover movies. Reel Report will give recommendations based on genre such as, musical, comedy, and action. it offers personalized movie recommendations and can be added to a watchlist for later viewing. This app uses a movie database API called OMDb to ensure users have access to a wide range of films. Its user-friendly interface makes finding your next favorite film an enjoyable and effortless experience.
 
-### [Deployed application link (click here)](https://reel-report-8887d227dacc.herokuapp.com/) 
+### [Deployed application](https://reel-report-8887d227dacc.herokuapp.com/) 
 
-### <img width="947" alt="image" src="https://github.com/BryceGitHuba/Movie_Picker/assets/149907275/204ea3f2-3982-4b5a-87ad-bfd5d4b35832">
+### ![Screenshot of deployed application](<public/assets/images/reel-report-screenshot.png>)
 
 
 ### User Story:
