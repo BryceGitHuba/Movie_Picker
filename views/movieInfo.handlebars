@@ -1,5 +1,11 @@
 <main class="container">    
     <h1>Your Reel Report</h1>
+    {{#if loggedIn}}
+    <button id="watchlist" value="{{movie.title}}" type="button">Add to Watchlist</button>
+    {{else}}
+    <p>Please <a href="/login">login</a> to add movie to your watchlist!</p>
+    {{/if}}
+
     <div class="flex-wrap">
         <br>
         <article class="center">
@@ -11,4 +17,9 @@
             <p>{{movie.plot}}</p>
         </article>
     </div>
+
 </main>
+
+{{#if loggedIn}}
+<script src="/js/watchlist-movie.js"></script>
+{{/if}}
