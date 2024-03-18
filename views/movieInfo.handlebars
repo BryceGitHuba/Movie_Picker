@@ -1,22 +1,22 @@
-<main class="container">
-    <div class="grid">
-        <div class="center-text">
-        <h1>Your Reel Report</h1>
-        {{#if loggedIn}}
-        <button id="watchlist" value="{{movie.title}}" type="button">Add to Watchlist</button>
-        {{else}}
-        <p>Please <a href="/login">login</a> to add movie to your watchlist!</p>
-        {{/if}}
-        </div>
+<main class="container">    
+    <h1>Your Reel Report</h1>
+    {{#if loggedIn}}
+    <button id="watchlist" value="{{movie.title}}" type="button">Add to Watchlist</button>
+    {{else}}
+    <p>Please <a href="/login">login</a> to add movie to your watchlist!</p>
+    {{/if}}
+
+    <div class="flex-wrap">
         <article class="center">
-            <img src={{movie.poster}} alt="Poster of {{movie.title}}"\>
+            <img src={{movie.poster}} alt="{{movie.title}} Movie Poster"\>
         </article>
-        <article>
+        <article class="card-width">
             <h2>{{movie.title}}</h2>
-            <h3>{{genre}}<br>{{formatDate movie.releaseDate}}<br>{{formatTime movie.runtime}}</h3>
+            <h5>{{genre}}<br>{{formatDate movie.releaseDate}}<br>{{formatTime movie.runtime}}</h5>
             <p>{{movie.plot}}</p>
         </article>
     </div>
+
 </main>
 
 {{#if loggedIn}}

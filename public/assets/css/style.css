@@ -1,7 +1,42 @@
+:root{
+    --color-1: #292929;
+    --color-2: #585858;
+    --color-3: #ffc815;
+    --color-4: white;
+    --color-5: black;
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: "Fjalla One", sans-serif;
+    text-transform:uppercase;
+    letter-spacing: 3px;
+}
+
+.flex-wrap{
+    display:flex;
+    justify-content:space-around;
+    flex-wrap: wrap;
+}
 .center {
     display: flex;
     justify-content: center;
+    width:fit-content;  
 }
+.card-width {
+    width: 60%;
+}
+
+.button{
+    background-color:var(--color-3);
+    border: var(--color-1);
+    color: var(--color-1);
+    font-weight: bold;
+}
+
+#logo{
+    transform: scale(0.75);
+}
+
 
 .center-text {
     text-align: center;
