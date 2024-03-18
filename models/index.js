@@ -1,6 +1,7 @@
 const Genre = require('./Genre');
 const Movie = require('./Movie');
 const User = require('./User');
+const Watchlist = require('./Watchlist');
 
 // 1:M Association
 
@@ -13,7 +14,9 @@ Genre.hasMany(Movie, { foreignKey: 'genreId' });
 Movie.belongsTo(Genre, { foreignKey: 'genreId' });
 
 // M:M Association
-// User has 0+ favorite movies, and a movie can be favorited by 0+ users
-// User.belongsToMany(Movie, { through: 'LikedMovies' })
 
-module.exports = { Genre, Movie };
+// User has 0+ watchlist movies, and a movie can be watchlist by 0+ users
+User.belongsToMany(Movie, { through: Watchlist });
+Movie.belongsToMany(User, { through: Watchlist });
+
+module.exports = { Genre, Movie, User, Watchlist };

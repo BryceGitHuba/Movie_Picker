@@ -1,19 +1,32 @@
 <main class="container">
-    <div class="grid">
-        <article>
-            <form>
-                <h2>Sign Up</h2>
-                <fieldset>
-                    <h6>Username</h6>
-                    <input type="text" id="username" name="username">
-                    <h6>Password</h6>
-                    <input type="password" id="password" name="password">
-                </fieldset>
-                <br>
-                <button type="submit" class="button">Sign Up</button>
+    <div>
+        <h3>Create New Account</h3>
+        <form id="signup-form">
+        <fieldset>
+            <label>
+            Username:
+            <input
+                id="username-signup"
+                name="username"
+                placeholder="Username"
+                autocomplete="username"
+            />
+            </label>
+            <label>
+            Password:
+            <input
+                id="password-signup"
+                type="password"
+                name="password"
+                placeholder="Password"
+                autocomplete="new-password"
+            />
+            </label>
+            <button type="submit" class="button">Signup</button>
             </form>
-        </article>
-    </div>
+            <p>Already have an account? <a href="/login">Login</a></p>
+        </fieldset>
+    </div>    
 </main>
 
-<script src="/js/signup.js"></script>
+<script src="./js/signup.js"></script>
