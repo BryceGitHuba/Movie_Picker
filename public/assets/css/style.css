@@ -6,6 +6,12 @@
     --color-5: black;
 }
 
+h1,h2,h3,h4,h5,h6{
+    font-family: "Fjalla One", sans-serif;
+    text-transform:uppercase;
+    letter-spacing: 3px;
+}
+
 .flex-wrap{
     display:flex;
     justify-content:space-around;
@@ -27,4 +33,7 @@
     font-weight: bold;
 }
 
+#logo{
+    transform: scale(0.75);
+}
 

@@ -9,7 +9,9 @@
       name="description"
       content="A pure HTML example, without dependencies."
     />
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap" rel="stylesheet">
     <!-- Pico.css -->
     <link
       rel="stylesheet"
@@ -21,7 +23,7 @@
     <!-- Header -->
     <header class="container">
       <nav>
-        <img src="public/assets/images/logo.png"/>
+        <img id="logo" src="public/assets/images/logo.png"/>
         <ul>
           <li><a href="#" class="contrast">Picks</a></li>
           <li><a href="#" class="contrast">Favorites</a></li>
@@ -30,20 +32,17 @@
       </nav>
     </header>
 
-    <main class="container">
-      <div class="grid">
-          <article>
-              <form>
-                  <h2>Sign Up</h2>
-                  <fieldset>
-                      <h6>Username</h6>
-                      <input type="text" id="username" name="username">
-                      <h6>Password</h6>
-                      <input type="password" id="password" name="password">
-                  </fieldset>
-                  <br>
-                  <button type="submit" class="button">Sign Up</button>
-              </form>
+    <main class="container">    
+      <h1>Your Reel Report</h1>
+      <div class="flex-wrap">
+          <br>
+          <article class="center">
+              <img src={{movie.poster}} alt="{{movie.title}} Movie Poster"\>
+          </article>
+          <article class="card-width">
+              <h2>{{movie.title}}</h2>
+              <h5>{{genre}}<br>{{formatDate movie.releaseDate}}<br>{{formatTime movie.runtime}}</h5>
+              <p>{{movie.plot}}</p>
           </article>
       </div>
   </main>
