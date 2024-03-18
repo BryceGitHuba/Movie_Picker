@@ -1,7 +1,7 @@
 # Movie Picker
 
 ###  Project Description: 
-Reel Report is an innovative app designed to transform how users discover movies. Through a series of questions about preferences such as genre, year, and more, it offers personalized movie recommendations. This app leverages a vast movie database API to ensure users have access to a wide range of films. Its user-friendly interface makes finding your next favorite film an enjoyable and effortless experience.
+Reel Report is an innovative app designed to transform how users discover movies. Reel Report will give recommendations based on genre such as, musical, comedy, and action. it offers personalized movie recommendations and can be added to a watchlist for later viewing. This app uses a movie database API called OMDb to ensure users have access to a wide range of films. Its user-friendly interface makes finding your next favorite film an enjoyable and effortless experience.
 
 ### [Deployed application link (click here)](https://reel-report-8887d227dacc.herokuapp.com/) 
 
@@ -11,10 +11,10 @@ Reel Report is an innovative app designed to transform how users discover movies
 ### User Story:
 
 - As a movie enthusiast
-- I want to receive movie recommendations based on specific criteria like genre and year
+- I want to receive movie recommendations based on genre, musical, comedy, and action
 - As a user seeking entertainment
-- I want to interact with a user-friendly app for movie suggestions
-- So that I can easily find my next favorite movie
+- I want to interact with a user-friendly app to find movies based on the movie suggestions
+- So that I can easily find my next favorite movie to add to the watchlist
 
 
 
@@ -22,15 +22,15 @@ Reel Report is an innovative app designed to transform how users discover movies
 
 - Given I am a new or returning user intending to access personalized movie recommendations,
 - When I navigate to the application's login page and enter my credentials,
-- Then I am directed to the homepage where I can begin to specify my movie preferences.
+- Then I am directed to the homepage where I can begin to specify my movie preferences based on genre.
   
 - Given I am on the homepage ready to find a new movie to watch,
-- When I select my preferred movie genres and specify a year or range of years,
-- Then the application generates a list of recommended movies that match my selected criteria, offering a personalized viewing suggestion.
+- When I select my preferred movie genre, musical, comedy, and action,
+- Then the application generates a recommended movie that matchs my selected criteria, offering a personalized viewing suggestion.
    
 - Given I have previously explored and selected several movies as my favorites or picks,
-- When I visit the 'My Picks' or 'Favorites' section of the application,
-- Then I am presented with a curated list of the movies I've marked as favorites, allowing me to easily access or modify my selections.
+- When I visit the 'Watchlist' section of the application,
+- Then I am presented with a curated list of the movies I've marked as a favorite, allowing me to easily access or modify my selections.
  
 
 ### User Flow Diagram: 
@@ -45,19 +45,19 @@ Reel Report is an innovative app designed to transform how users discover movies
 
 - Upon successful login or signup, the user is directed to the homepage.
 
-- The homepage offers options to input movie preferences, such as genre selection and year or range of years.
+- The homepage offers options to input movie genre such as, musical, comedy, and action.
 
 - After submitting preferences, the application processes the input.
 
-- The user is then presented with a list of movie recommendations based on the specified genres and years.
+- The user is then presented with a movie recommendation based on the specified genres.
 
 - Interacting with Recommendations
 
-- Option to Favorite: User can mark movies as favorites or picks for later viewing.
+- Option to add to watchlist: User can mark movies as a favorite for later viewing.
 
-- From any page, the user can navigate to the 'My Picks' or 'Favorites' section.
+- From any page, the user can navigate to the 'Watchlist' section.
 
-- This section displays all the movies previously marked as favorites, allowing the user to modify or remove selections.
+- This section displays all the movies previously marked as their favorites, allowing the user to modify or remove selections.
 
 - Logout/Session End
 
