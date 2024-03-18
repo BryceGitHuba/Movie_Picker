@@ -1,5 +1,5 @@
 const router = require('express').Router();
-const { Movie, Genre } = require('../../models');
+const { Movie, Genre, Watchlist } = require('../../models');
 const withAuth = require('../../utils/auth');
 
 // GET movie based on its title
@@ -61,7 +61,7 @@ router.get('/results/:genre', async (req, res) => {
 });
 
 // POST to add movie to database
-router.post('/add', async (req, res) => {
+router.post('/add', withAuth, async (req, res) => {
   try {
         // Capitalize first letter in movie genre
         const formatGenre = (genre) => { 
@@ -94,6 +94,76 @@ router.post('/add', async (req, res) => {
         res.json({
           message: 'Successfully added new movie.',
           title: newMovie.title,
+        });
+        
+      } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+      }
+})
+
+// POST to watchlist movie
+router.post('/watchlist', withAuth, async (req, res) => {
+  try {
+        // Get the movie ID
+        const movieData = await Movie.findOne({
+          where: { title: req.body.title }
+        });
+
+        const movieId = movieData.dataValues.id;
+
+        // Add watchlisted movie to database
+        const watchlistData = await Watchlist.create({
+          movieId: movieId,
+          userId: req.session.userId,
+        });
+
+        if(!watchlistData) {
+          res
+              .status(400)
+              .json({ message: 'Could not find movie to add to watchlist.' });
+          return;
+      }
+
+      console.log(watchlistData);
+
+        res.json({
+          message: 'Successfully watchlisted movie.',
+        });
+        
+      } catch (err) {
+        console.log(err);
+        res.status(500).json(err);
+      }
+})
+
+// DELETE to remove movie from watchlist
+router.delete('/remove-from-watchlist', withAuth, async (req, res) => {
+  try {
+        // Get the movie ID
+        const movieData = await Movie.findOne({
+          where: { title: req.body.title }
+        });
+
+        const movieId = movieData.dataValues.id;
+
+        // Delete movie from users watchlist
+        const watchlistData = await Watchlist.destroy({
+            where: {
+              movieId: movieId,
+              userId: req.session.userId,
+            },
+        });
+
+        if(!watchlistData) {
+            res
+                .status(400)
+                .json({ message: 'Could not find movie to remove from watchlist.' });
+            return;
+        }
+
+        res.json({
+          message: 'Successfully removed movie from watchlist.',
         });
         
       } catch (err) {

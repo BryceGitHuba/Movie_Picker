@@ -7,15 +7,9 @@
             <h3>What type of movie would you like to watch?</h3>
             <fieldset>
               <h6>Genre:</h6>
-
-              <input type="radio" id="comedy" name="genre" checked value="1"/>
-              <label htmlFor="romance">Comedy</label>
-
-              <input type="radio" id="action" name="genre" value="2"/>
-              <label htmlFor="comedy">Action</label>
-
-              <input type="radio" id="musical" name="genre" value="3" />
-              <label htmlFor="musical">Musical</label>
+              {{#each genre}}
+              {{> radio}}
+              {{/each}}
             </fieldset>
             <button type="submit">Submit</button>
           </form>
@@ -28,28 +22,36 @@
               <input
                 id="title"
                 type="text"
-                name="text"
-                placeholder="Movie title"
-                aria-label="Text"
+                name="title"
+                placeholder="Superbad"
+                aria-label="Movie title"
+                required
               />
               <label>Genre:</label>
               <input
                 id="genre"
                 type="text"
-                name="text"
+                name="genre"
                 placeholder="Comedy"
-                aria-label="Text"
+                aria-label="Movie genre"
+                required
               />
               <label>Plot:</label>
               <textarea 
-                id="plot"
-                name="text"
-                rows="3" cols="1"
-                placeholder="Plot goes here"
-                required>
-              </textarea>
+                id="plot" 
+                name="plot" 
+                placeholder="Two co-dependent high school seniors are forced to deal with separation anxiety after their plan to stage a booze-soaked party goes awry." 
+                cols="50"
+                rows="5"
+                autocapitalize="sentences"
+                aria-label="Movie plot" 
+                required></textarea>
             </fieldset>
+            {{#if loggedIn}}
             <button type="submit">Submit</button>
+            {{else}}
+            <p class="center-text">Please <a href="/login">login</a> to add a movie!</p>
+            {{/if}}
           </form>
         </article>
       </div>
@@ -58,4 +60,6 @@
 </main>
 
 <script src="/js/pick-movie.js"></script>
-<script src="/js/add-movie.js"></script>
+{{#if loggedIn}}
+  <script src="/js/add-movie.js"></script>
+{{/if}}

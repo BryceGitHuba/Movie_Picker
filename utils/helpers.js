@@ -1,7 +1,8 @@
 module.exports = {
   // Format dates as M/D/YYYY
   formatDate: (date) => {
-    return `${new Date(date).getMonth() + 1}/${new Date(date).getDate() + 1}/${new Date(date).getFullYear()}`;
+    date = new Date(date);
+    return `${date.toLocaleString('default', { month: 'long',})} ${date.getDate() + 1}, ${date.getFullYear()}`;
   },
   // Formats the runtime (default: 1 hour(s) and 30 minute(s))
   formatTime: (runtime) => {
@@ -29,4 +30,11 @@ module.exports = {
           return `${hour} hour(s) and ${minute} minute(s)`;
     }
   },
+  // Lowercase string
+  lowercase: (string) => {
+    if(string) {
+      return string.toLowerCase();
+    }
+    return '';
+  }
 };

@@ -4,7 +4,7 @@ const signupFormHandler = async (event) => {
   const username = document.querySelector('#username-signup').value.trim();
   const password = document.querySelector('#password-signup').value.trim();
 
-  if (username  && password) {
+  if (username && password) {
     const response = await fetch('/api/users/signup', {
       method: 'POST',
       body: JSON.stringify({ username, password }),
@@ -12,13 +12,13 @@ const signupFormHandler = async (event) => {
     });
 
     if (response.ok) {
-      document.location.replace('/homepage');
+      alert('Your account was successfully created. Please login.');
+      window.location.assign('/login');
     } else {
-      alert('Failed to sign up.');
+      const resMessage = await response.json();
+      alert(resMessage.message);
     }
   }
 };
 
-document
-.querySelector('#signup')
-.addEventListener('submit', signupFormHandler);
+document.querySelector('#signup-form').addEventListener('submit', signupFormHandler);

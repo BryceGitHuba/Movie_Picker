@@ -28,7 +28,7 @@ Movie.init(
       allowNull: false,
     },
     releaseDate: {
-      type: DataTypes.DATEONLY, // 2024-3-11
+      type: DataTypes.DATEONLY, // 3-11-2024
       allowNull: true,
     },
     runtime: {
