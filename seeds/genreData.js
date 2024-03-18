@@ -1,14 +1,14 @@
-const {Genre} = require("../models");
+const { Genre } = require('../models');
 
 const genreData = [
     {
-        genre: "Comedy"
+        genre: 'Comedy',
     },
     {
-        genre: "Action"  
+        genre: 'Action', 
     },
     {
-        genre: "Musical"  
+        genre: 'Musical',  
     },
 ];
 
