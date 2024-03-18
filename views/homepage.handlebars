@@ -11,7 +11,7 @@
               {{> radio}}
               {{/each}}
             </fieldset>
-            <button type="submit">Submit</button>
+            <button class="button" type="submit">Submit</button>
           </form>
         </article>
         <article>
@@ -48,7 +48,7 @@
                 required></textarea>
             </fieldset>
             {{#if loggedIn}}
-            <button type="submit">Submit</button>
+            <button class="button" type="submit">Submit</button>
             {{else}}
             <p class="center-text">Please <a href="/login">login</a> to add a movie!</p>
             {{/if}}

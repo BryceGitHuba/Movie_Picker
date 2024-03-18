@@ -1,10 +1,16 @@
-<main class="container">    
-    <h1>Your Reel Report</h1>
-    {{#if loggedIn}}
-    <button id="watchlist" value="{{movie.title}}" type="button">Add to Watchlist</button>
-    {{else}}
-    <p>Please <a href="/login">login</a> to add movie to your watchlist!</p>
-    {{/if}}
+<main class="container">
+        
+    <div class="center-text">
+        <h1>Your Reel Report</h1>
+        {{#if loggedIn}}
+        <div class="grid">
+            <button class="button" id="watchlist" value="{{movie.title}}" type="button">Add to Watchlist</button>
+            <button class="button" type="button" onclick="location.reload()">I want another {{lowercase genre}} movie!</button>
+        </div>
+        {{else}}
+        <p>Please <a href="/login">login</a> to add movie to your watchlist!</p>
+        {{/if}}
+    </div>
 
     <div class="flex-wrap">
         <article class="center">
