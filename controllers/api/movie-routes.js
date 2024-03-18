@@ -60,6 +60,34 @@ router.get('/results/:genre', async (req, res) => {
       }
 });
 
+// POST movie info back to client
+// Uses OMDb API to get runtime, release date, and poster image
+router.post('/info', async (req, res)=>{
+  try {
+        const apiUrl = `http://www.omdbapi.com/?apikey=${process.env.API_KEY}&t=${req.body.movieUrl}&type=movie`;
+
+        const response = await fetch(apiUrl);
+        
+        const movieData = await response.json();
+
+        // Alert user that movie was not found
+        if(movieData.Response === "False"){
+          res.status(400).json(`${movieData.Error} Please try again.\nTip: check the movie title was entered correctly.`);
+        }
+        else {
+          const { 
+              Runtime: runtime, 
+              Released: releaseDate, 
+              Poster: poster, 
+          } = movieData; 
+
+          res.json({ runtime, releaseDate, poster });
+        }       
+      } catch (err) {
+        res.status(500).json(err);
+      }
+})
+
 // POST to add movie to database
 router.post('/add', withAuth, async (req, res) => {
   try {
