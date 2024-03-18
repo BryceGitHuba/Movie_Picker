@@ -1,24 +1,25 @@
 # Movie Picker
 
-###  Project Description: 
+##  Description: 
 Reel Report is an innovative app designed to transform how users discover movies. Reel Report will give recommendations based on genre such as, musical, comedy, and action. it offers personalized movie recommendations and can be added to a watchlist for later viewing. This app uses a movie database API called OMDb to ensure users have access to a wide range of films. Its user-friendly interface makes finding your next favorite film an enjoyable and effortless experience.
 
-### [Deployed application](https://reel-report-8887d227dacc.herokuapp.com/) 
+## [Deployed Application](https://reel-report-8887d227dacc.herokuapp.com/) 
 
-### ![Screenshot of deployed application](<public/assets/images/reel-report-screenshot.png>)
+## ![Screenshot of deployed application](<public/assets/images/reel-report-screenshot.png>)
 
+## User Story:
 
-### User Story:
-
+### Movie Enthusiast
 - As a movie enthusiast
 - I want to receive movie recommendations based on genre, musical, comedy, and action
+- So that I can easily find my next favorite movie to add to my watchlist
+
+### User Seeking Entertainment
 - As a user seeking entertainment
 - I want to interact with a user-friendly app to find movies based on the movie suggestions
-- So that I can easily find my next favorite movie to add to the watchlist
+- So that I can easily find my next favorite movie to add to my watchlist
 
-
-
-### Acceptance Criteria:
+## Acceptance Criteria:
 
 - Given I am a new or returning user intending to access personalized movie recommendations,
 - When I navigate to the application's login page and enter my credentials,
@@ -32,40 +33,48 @@ Reel Report is an innovative app designed to transform how users discover movies
 - When I visit the 'Watchlist' section of the application,
 - Then I am presented with a curated list of the movies I've marked as a favorite, allowing me to easily access or modify my selections.
  
+## Usage: 
 
-### User Flow Diagram: 
-
+### Login/Sign Up
 - User opens the application.
-
-- User is presented with the option to log in or sign up.
-
-- If new user: User selects "Sign Up," enters required information, and creates an account.
-
-- If returning user: User selects "Log In," enters credentials, and accesses the homepage.
-
+- User is presented with the option to log in or sign up on the navigation bar.
+    - New User: User selects "Sign Up," enters required information, and creates an account.
+    - Returning User: User selects "Log In" and enters credentials.
 - Upon successful login or signup, the user is directed to the homepage.
 
-- The homepage offers options to input movie genre such as, musical, comedy, and action.
+### Homepage
+The homepage offers the option to either add a movie or search for a reccomendation.
 
-- After submitting preferences, the application processes the input.
+#### Add a Movie
+- User can only add a movie if user is logged in.
+- Once logged in, user can enter the title, genre, and plot of the movie. 
+- The application then uses a server-side API to retrieve run time and release date and stores the information for reccomendations.
 
-- The user is then presented with a movie recommendation based on the specified genres.
+#### Reccomendations/Reel Report
+- User is presented with the option to choose a movie based on genre. 
+- The application generates a random movie based on the genre. 
+- The "Reel Report" is displayed and is available for the user to save on their watchlist. 
+- The user has the option to add to watchlist if logged in.
 
-- Interacting with Recommendations
-
+### Watchlist
+- User can only access watchlist if logged in.
 - Option to add to watchlist: User can mark movies as a favorite for later viewing.
-
 - From any page, the user can navigate to the 'Watchlist' section.
-
 - This section displays all the movies previously marked as their favorites, allowing the user to modify or remove selections.
 
-- Logout/Session End
+### Log Out
+Once user logs out the session ends.
 
+## Credits
 
+### Developers
+- [April Vasquez](https://github.com/apri1mayrain)
+- [Kalyn Sifuentez](https://github.com/kalynsifuentez)
+- [Bryce Wheeler](https://github.com/BryceGitHuba)
+- [Itzel Hernandez](https://github.com/itzelherndz)
 
 ### Server Side APIs:
 - [Open Movie Database API](https://www.omdbapi.com/)
-
 
 ### CSS Framework:
 - [Pico CSS](https://picocss.com/)
